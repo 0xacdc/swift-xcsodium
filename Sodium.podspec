@@ -15,8 +15,9 @@ s.osx.deployment_target = '10.11'
 s.watchos.deployment_target = '5.0'
 
 s.source_files = 'Sodium/**/*.{swift,h}'
-s.vendored_framework = 'Clibsodium.xcframework'
 s.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 s.static_framework = true
 s.requires_arc = true
+
+s.dependency 'XCFSodium'
 end
